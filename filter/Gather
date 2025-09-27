@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
+<!DOCTYPE html><html lang="en"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <title>📺 俾条蕉你食…</title>
@@ -281,7 +279,7 @@
         }
     </style>
 </head>
-<body>
+<body class="translating">
     <div class="language-selector">
         <select id="languageSelect" onchange="changeLanguage(this.value)">
             <option value="zh-CN">🇨🇳 简体中文</option>
@@ -297,13 +295,11 @@
         </select>
     </div>
 
-    <div class="translating-indicator" id="translatingIndicator">
-        正在翻译中... / Translating...
-    </div>
+    <div class="translating-indicator" id="translatingIndicator" style="display: block;">Translating.../Translating...</div>
 
     <div class="container">
         <h1 class="title">佛系收集，免费分享 😊</h1>
-        <p class="subtitle">实时直播集萃 🌟| 尽享精彩瞬间</p>
+        <p class="subtitle">Live Episodes 🌟| Enjoy the Moment</p>
         
         <div class="subscription-grid">
             <div class="subscription-link" onclick="copySubscriptionLink('https://tv.iill.top/m3u/Gather')">
@@ -327,8 +323,7 @@
             </div>
 
             <div class="subscription-link" onclick="copyShellLink()">
-                <span class="emoji">💻</span>Shell 脚本
-            </div>
+                <span class="emoji">💻</span>Shellscript</div>
         </div>
 
         <div class="small-links">
@@ -341,54 +336,54 @@
         </div>
     </div>
 
-    <div id="updateModal" class="modal">
+    <div id="updateModal" class="modal" style="display: block;">
         <div class="modal-content">
-            <span class="close-btn" onclick="closeUpdateNotice()">&times;</span>
+            <span class="close-btn" onclick="closeUpdateNotice()">×</span>
             <div class="update-content">
-                <h2 style="text-align: center;">✨ 公告 ✨</h2>
+                <h2 style="text-align: center;">Pengumuman</h2>
                 <div class="notice-text">请勿频繁刷新订阅..</div>
                 
                 <strong>㊀ · 更新日志 📝</strong>
                 <div class="update-section">
-                    <div class="update-date">• 2025.9.14</div>
+                    <div class="update-date">• 9/14/2025</div>
                     <div class="update-item">维护 Live「更改订阅地址 / 取消 YouTube 限制」</div>
 
-                    <div class="update-date">• 2025.9.12</div>
+                    <div class="update-date">• 9/12/2025</div>
                     <div class="update-item">测试 咪咕系列「删除 tv-1 子域名」</div>
 
-                    <div class="update-date">• 2025.9.1</div>
+                    <div class="update-date">• 9.1.2025</div>
                     <div class="update-item">近期 维护总结「TG频道 查阅」</div>
 
-                    <div class="update-date">• 2025.8.20</div>
-                    <div class="update-item">维护 Gather「新增 •咪咕「海外」/ 优化 "广告"」</div>
+                    <div class="update-date">• 8.20.2025</div>
+                    <div class="update-item">Maintain Gather “New • Migu“ Overseas ”/Optimize“ Ads ”</div>
 
-                    <div class="update-date">• 2025.8.9</div>
+                    <div class="update-date">• 8.9.2025</div>
                     <div class="update-item">维护 Gather「•咪咕「TV」支持回看」</div>
 
-                    <div class="update-date">• 2025.8.8</div>
-                    <div class="update-item">维护 Gather「删除 日/韩分组」</div>
+                    <div class="update-date">• 8.8.2025</div>
+                    <div class="update-item">Maintain Gather "Delete Japanese/Korean Grouping"</div>
                     <div class="update-item">维护 "广告"「兼容性 BUG」</div>
 
-                    <div class="update-date">• 2025.8.3</div>
+                    <div class="update-date">• 8.3.2025</div>
                     <div class="update-item">维护 Gather「增加 备用地址」</div>
                     <div class="update-item">维护 Live「增加 备用地址」</div>
-                    <div class="update-item">维护 Sport「增加 备用地址」</div>
+                    <div class="update-item">Maintain Sport "Add Alternate Address"</div>
                     <div class="update-item">增加 "广告"「时效 6–24 小时」</div>
 
-                    <div class="update-date">• 2025.7.24</div>
+                    <div class="update-date">• 7.24.2025</div>
                     <div class="update-item">维护 Sport「修复 部分播放器 失效BUG / 兼容更多播放器」</div>
 
-                    <div class="update-date">• 2025.7.22</div>
-                    <div class="update-item">维护 Live「优化 YouTube/Twitch 代理」</div>
-                    <div class="update-item">维护 Gather「增加 翡翠/無綫新聞-随时拉闸」</div>
+                    <div class="update-date">• 7.22.2025</div>
+                    <div class="update-item">Maintain Live Optimize YouTube/Twitch Proxy</div>
+                    <div class="update-item">Maintain Gather "Add Emerald/Wireless News - Pull the Bar at Any Time"</div>
 
-                    <div class="update-date">• 2025.6.23</div>
-                    <div class="update-item">维护 Live「新增 故障转移机制」</div>
+                    <div class="update-date">• 6.23.2025</div>
+                    <div class="update-item">Maintain Live Add Failover Mechanism</div>
                     <div class="update-item">维护 Live「更新 周期改为 20 分钟」</div>
 
-                    <div class="update-date">• 2025.6.4</div>
-                    <div class="update-item">维护 Gather「增加 •咪咕「TV」FHD/HD 频道」</div>
-                    <div class="update-item">维护 Live「替换 国内VPS 解析」</div>
+                    <div class="update-date">• 6.4.2025</div>
+                    <div class="update-item">Maintenance Gather “Add • Migu“ TV ”FHD/HD Channels”</div>
+                    <div class="update-item">Maintain Live "Replace Domestic VPS Parsing"</div>
                     <div class="update-item">维护 Sport「增加 两个频道」</div>
                     <div class="update-item">维护 myTV「替换 部分频道 LOGO」</div>
                     <div class="update-item">增加 <a href="https://yang-1989.eu.org/Conversion.php" target="_blank">格式转换</a> <span>「偶尔可能有用」</span>
@@ -811,5 +806,5 @@
             }
         }
     </script>
-</body>
-</html>
+
+</div></body></html>
