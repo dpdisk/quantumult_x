@@ -1,0 +1,122 @@
+﻿# 【核心规则：仅指定网站走代理，未指定走国内】
+
+# 规则类型：Quantumult X 分流规则（支持远程调用）
+
+# 说明：将需要代理的网站添加到“指定代理网站列表”，其余流量自动匹配国内规则
+
+#[Rule]
+
+# -------------------------- 1. 指定代理网站列表 --------------------------
+
+# 格式：DOMAIN-SUFFIX,目标网站后缀,你的策略名 （子域名自动匹配）
+
+# 格式2：DOMAIN,完整域名,你的策略名 （仅匹配单个域名，不包含子域名）
+
+# DOMAIN-SUFFIX,google.com,你的策略名   # 示例1：google及子域名走策略
+
+# DOMAIN-SUFFIX,youtube.com,你的策略名 # 示例2：youtube及子域名走策略
+
+# DOMAIN,mail.qq.com,你的策略名        # 示例3：仅 mail.qq.com 单个域名走策略
+
+# 如需添加更多网站，复制上方任意一行，替换“域名”和“你的策略名”即可
+
+# > Github
+
+DOMAIN,github.global.ssl.fastly.net,PROXY
+
+DOMAIN-SUFFIX,github.blog,PROXY
+
+DOMAIN-SUFFIX,github.com,PROXY
+
+DOMAIN-SUFFIX,github.io,PROXY
+
+DOMAIN-SUFFIX,githubassets.com,PROXY
+
+DOMAIN-SUFFIX,githubusercontent.com,PROXY
+
+# > YouTubeMusic
+
+USER-AGENT,com.google.ios.youtubemusic*,PROXY
+
+USER-AGENT,YouTubeMusic*,PROXY
+
+# > YouTube
+
+USER-AGENT,com.google.ios.youtube*,PROXY
+
+USER-AGENT,YouTube*,PROXY
+
+DOMAIN-SUFFIX,googlevideo.com,PROXY
+
+DOMAIN-SUFFIX,withyoutube.com,PROXY
+DOMAIN-SUFFIX,youtu.be,PROXY
+
+DOMAIN-SUFFIX,youtube.com,PROXY
+
+DOMAIN-SUFFIX,youtubeeducation.com,PROXY
+
+DOMAIN-SUFFIX,youtubegaming.com,PROXY
+
+DOMAIN-SUFFIX,youtubekids.com,PROXY
+
+DOMAIN-SUFFIX,youtube-nocookie.com,PROXY
+
+DOMAIN-SUFFIX,yt.be,PROXY
+
+DOMAIN-SUFFIX,ytimg.com,PROXY
+
+DOMAIN,youtubei.googleapis.com,PROXY
+
+DOMAIN,yt3.ggpht.com,PROXY
+
+# > Telegram
+
+DOMAIN-SUFFIX,legra.ph,PROXY
+
+DOMAIN-SUFFIX,t.me,PROXY
+
+DOMAIN-SUFFIX,tdesktop.com,PROXY
+
+DOMAIN-SUFFIX,telegra.ph,PROXY
+
+DOMAIN-SUFFIX,telegram.me,PROXY
+
+DOMAIN-SUFFIX,telegram.org,PROXY
+
+DOMAIN-SUFFIX,telesco.pe,PROXY
+
+IP-CIDR,91.108.4.0/22,PROXY
+
+IP-CIDR,91.108.8.0/22,PROXY
+
+IP-CIDR,91.108.12.0/22,PROXY
+
+IP-CIDR,91.108.16.0/22,PROXY
+
+IP-CIDR,91.108.20.0/22,PROXY
+
+IP-CIDR,91.108.56.0/22,PROXY
+
+IP-CIDR,91.105.192.0/23,PROXY
+
+IP-CIDR,149.154.160.0/20,PROXY
+
+IP-CIDR,185.76.151.0/24,PROXY
+
+IP6-CIDR,2001:b28:f23d::/48,PROXY
+
+IP6-CIDR,2001:b28:f23f::/48,PROXY
+
+IP6-CIDR,2001:67c:4e8::/48,PROXY
+
+IP6-CIDR,2001:b28:f23c::/48,PROXY
+
+IP6-CIDR,2a0a:f280::/32,PROXY
+
+# > Live
+
+DOMAIN,tv.iill.top,PROXY
+
+# > Url
+
+DOMAIN,yfamily.vercel.app,PROXY
