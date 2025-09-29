@@ -121,4 +121,4 @@ DOMAIN,tv.iill.top,PROXY
 
 DOMAIN,yfamily.vercel.app,PROXY
 
-DOMAIN,greasyfork.org,PROXY
+DOMAIN-SUFFIX,greasyfork.org,PROXY
