@@ -119,6 +119,8 @@ DOMAIN,tv.iill.top,PROXY
 
 # > Url
 
+DOMAIN-SUFFIX,greasyfork.org,PROXY
 DOMAIN,yfamily.vercel.app,PROXY
 
-DOMAIN-SUFFIX,greasyfork.org,PROXY
+DOMAIN,yyds.emogood.top,PROXY
+DOMAIN,yyds.emovpn.top,PROXY
