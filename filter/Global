@@ -33,6 +33,7 @@ DOMAIN,github.io,PROXY
 DOMAIN,githubassets.com,PROXY
 
 DOMAIN,raw.githubusercontent.com,PROXY
+DOMAIN,release-assets.githubusercontent.com,PROXY
 
 # > YouTubeMusic
 
