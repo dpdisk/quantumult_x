@@ -1,33 +1,33 @@
-﻿#[Rule]
+﻿#[rule]
 
 # -------------------------- 2. 未指定网站默认走国内 --------------------------
 
 # 国内IP段直接连接（优先匹配国内IP）
-GEOIP,CN,DIRECT
+geoip,cn,direct
 
 # 国内常见顶级域名/二级域名直接连接（补充IP未覆盖的国内域名）
-DOMAIN-SUFFIX,cn,DIRECT
+domain-suffix,cn,direct
 
-DOMAIN-SUFFIX,com.cn,DIRECT
+domain-suffix,com.cn,direct
 
-DOMAIN-SUFFIX,net.cn,DIRECT
+domain-suffix,net.cn,direct
 
-DOMAIN-SUFFIX,org.cn,DIRECT
+domain-suffix,org.cn,direct
 
-DOMAIN-SUFFIX,gov.cn,DIRECT
+domain-suffix,gov.cn,direct
 
 # 国内主流平台域名补充（按需增删，避免误走代理）
-DOMAIN-SUFFIX,baidu.com,DIRECT
+domain-suffix,baidu.com,direct
 
-DOMAIN-SUFFIX,taobao.com,DIRECT
+domain-suffix,taobao.com,direct
 
-DOMAIN-SUFFIX,tmall.com,DIRECT
+domain-suffix,tmall.com,direct
 
-DOMAIN-SUFFIX,jd.com,DIRECT
-DOMAIN-SUFFIX,weixin.qq.com,DIRECT
+domain-suffix,jd.com,direct
+domain-suffix,weixin.qq.com,direct
 
-DOMAIN-SUFFIX,qq.com,DIRECT
+domain-suffix,qq.com,direct
 
 # 最终规则：所有未匹配上述规则的流量，强制走国内（必须放在最后）
 
-FINAL,DIRECT
+final,direct
