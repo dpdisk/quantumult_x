@@ -35,6 +35,10 @@ domain,githubassets.com,proxy
 domain,raw.githubusercontent.com,proxy
 domain,release-assets.githubusercontent.com,proxy
 
+# > google
+domain,translate.google.com,proxy
+domain-keyword,google,proxy
+
 # > youtubemusic
 
 user-agent,com.google.ios.youtubemusic*,proxy
