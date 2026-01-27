@@ -37,6 +37,7 @@ domain,release-assets.githubusercontent.com,proxy
 
 # > google
 domain,translate.google.com,proxy
+domain-suffix,translate.goog,proxy
 domain-keyword,google,proxy
 
 # > youtubemusic
