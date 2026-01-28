@@ -10,7 +10,6 @@
 
 # 格式2：domain,完整域名,你的策略名 （仅匹配单个域名，不包含子域名）
 # domain-suffix,google.com,你的策略名   # 示例1：google及子域名走策略
-
 # domain-suffix,youtube.com,你的策略名 # 示例2：youtube及子域名走策略
 
 # domain,mail.qq.com,你的策略名        # 示例3：仅 mail.qq.com 单个域名走策略
