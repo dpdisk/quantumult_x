@@ -3,28 +3,20 @@
 # 说明：将需要代理的网站添加到“指定代理网站列表”，其余流量自动匹配国内规则
 
 #[rule]
-
 # -------------------------- 1. 指定代理网站列表 --------------------------
-
 # 格式：domain-suffix,目标网站后缀,你的策略名 （子域名自动匹配）
-
 # 格式2：domain,完整域名,你的策略名 （仅匹配单个域名，不包含子域名）
 # domain-suffix,google.com,你的策略名   # 示例1：google及子域名走策略
 # domain-suffix,youtube.com,你的策略名 # 示例2：youtube及子域名走策略
-
 # domain,mail.qq.com,你的策略名        # 示例3：仅 mail.qq.com 单个域名走策略
 # 如需添加更多网站，复制上方任意一行，替换“域名”和“你的策略名”即可
 
 # > github
-
 domain,github.global.ssl.fastly.net,proxy
 domain,github.blog,proxy
-
 domain,github.com,proxy
 domain,github.io,proxy
-
 domain,githubassets.com,proxy
-
 domain,raw.githubusercontent.com,proxy
 domain,release-assets.githubusercontent.com,proxy
 
@@ -34,7 +26,6 @@ domain-suffix,translate.goog,proxy
 domain-keyword,google,proxy
 
 # > youtubemusic
-
 user-agent,com.google.ios.youtubemusic*,proxy
 user-agent,YouTubeMusic*,proxy
 
@@ -44,23 +35,18 @@ user-agent,YouTube*,proxy
 domain-suffix,googlevideo.com,proxy
 domain-suffix,withyoutube.com,proxy
 domain-suffix,youtu.be,proxy
-
 domain-suffix,youtube.com,proxy
 domain-suffix,youtubeeducation.com,proxy
 domain-suffix,youtubegaming.com,proxy
-
 domain-suffix,youtubekids.com,proxy
 domain-suffix,youtube-nocookie.com,proxy
 domain-suffix,yt.be,proxy
-
 domain-suffix,ytimg.com,proxy
 domain,youtubei.googleapis.com,proxy
-
 domain,yt3.ggpht.com,proxy
 
 # > telegram
 domain-suffix,legra.ph,proxy
-
 domain-suffix,t.me,proxy
 domain-suffix,tdesktop.com,proxy
 domain-suffix,telegra.ph,proxy
@@ -70,17 +56,14 @@ domain-suffix,telesco.pe,proxy
 IP-CIDR,91.108.4.0/22,proxy
 IP-CIDR,91.108.8.0/22,proxy
 IP-CIDR,91.108.12.0/22,proxy
-
 IP-CIDR,91.108.16.0/22,proxy
 IP-CIDR,91.108.20.0/22,proxy
-
 IP-CIDR,91.108.56.0/22,proxy
 
 IP-CIDR,91.105.192.0/23,proxy
 IP-CIDR,149.154.160.0/20,proxy
 IP-CIDR,185.76.151.0/24,proxy
 IP6-CIDR,2001:b28:f23d::/48,proxy
-
 IP6-CIDR,2001:b28:f23f::/48,proxy
 IP6-CIDR,2001:67c:4e8::/48,proxy
 IP6-CIDR,2001:b28:f23c::/48,proxy
@@ -90,10 +73,8 @@ IP6-CIDR,2a0a:f280::/32,proxy
 domain,tv.iill.top,proxy
 
 # > url
-
 domain-suffix,greasyfork.org,proxy
 domain,yfamily.vercel.app,proxy
-
 
 # > vpn
 domain,feijicloud.com,proxy
