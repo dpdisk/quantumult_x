@@ -1,5 +1,4 @@
 ﻿#[rule]
-
 # -------------------------- 2. 未指定网站默认走国内 --------------------------
 # 国内IP段直接连接（优先匹配国内IP）
 geoip,cn,direct
@@ -8,14 +7,12 @@ geoip,cn,direct
 domain-suffix,cn,direct
 domain-suffix,com.cn,direct
 domain-suffix,net.cn,direct
-
 domain-suffix,org.cn,direct
 domain-suffix,gov.cn,direct
 
 # 国内主流平台域名补充（按需增删，避免误走代理）
 domain-suffix,baidu.com,direct
 domain-suffix,taobao.com,direct
-
 domain-suffix,tmall.com,direct
 domain-suffix,jd.com,direct
 domain-suffix,weixin.qq.com,direct
