@@ -27,11 +27,11 @@ domain-keyword,google,proxy
 
 # > youtubemusic
 user-agent,com.google.ios.youtubemusic*,proxy
-user-agent,YouTubeMusic*,proxy
+user-agent,youtubemusic*,proxy
 
 # > youtube
 user-agent,com.google.ios.youtube*,proxy
-user-agent,YouTube*,proxy
+user-agent,youtube*,proxy
 domain-suffix,googlevideo.com,proxy
 domain-suffix,withyoutube.com,proxy
 domain-suffix,youtu.be,proxy
@@ -80,4 +80,3 @@ domain,feijicloud.com,proxy
 domain,mojie.me,proxy
 domain,yyds.emogood.top,proxy
 domain,yyds.emovpn.top,proxy
-
