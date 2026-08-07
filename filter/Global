@@ -73,10 +73,10 @@ domain,tv.iill.top,proxy
 
 # > url
 domain-suffix,greasyfork.org,proxy
-domain,yfamily.vercel.app,proxy
+domain,yfamilys.com,proxy
 
 # > vpn
-domain,feijicloud.com,proxy
+domain,mojie.net,proxy
 domain,mojie.me,proxy
 domain,yyds.emogood.top,proxy
 domain,yyds.emovpn.top,proxy
